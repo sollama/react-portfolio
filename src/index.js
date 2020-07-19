@@ -12,12 +12,14 @@ import './index.css';
 
 
 ReactDOM.render(
+    <div>
         <Router history={createBrowserHistory()}>
             <Switch>
                 <Route exact path='/' render={() => <Header><App /></Header>} />
                 <Route path='/portfolio' render={() => <Header><Portfolio /></Header>} />
                 <Route path='/generator' render={() => <Header><Generator /></Header>} />
             </Switch>
-        </Router>,
+        </Router>
+    </div>,
 document.getElementById('root'));
 
