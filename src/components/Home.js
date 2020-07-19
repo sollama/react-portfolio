@@ -3,7 +3,6 @@ import SocialProfiles from './SocialProfiles';
 import Title from './Title';
 import profile from '../assets/profile.JPG';
 import Portfolio from './Portfolio';
-import Generator from '../projects/generator'
 
 class Home extends Component {
     state = { displayBio: false };
@@ -36,8 +35,7 @@ class Home extends Component {
           <Portfolio/>
           <hr />
           <SocialProfiles />
-          <hr />
-          <Generator/>
+
         </div>
       )}
     }

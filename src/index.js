@@ -18,6 +18,6 @@ ReactDOM.render(
                 <Route path='/generator' render={() => <Header><Generator /></Header>} />
             </Switch>
         </Router>
-        </div>,
+    </div>,
 document.getElementById('root'));
 
