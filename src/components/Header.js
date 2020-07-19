@@ -1,19 +1,19 @@
 import React from 'react';
-import { Link, withRouter } from 'react-router-dom';
+import { Link } from 'react-router-dom';
+import '../index.css'
+
+const HeaderMenuItem = ({linkLocation, labelText}) => {
+  return <div className='header-menu'><Link to={linkLocation}>{labelText}</Link></div>;
+}
 
 const Header = ({ children }) => {
-  const style = {
-    display: 'inline-block',
-    margin: 10,
-    marginBottom: 30
-  };
 
   return (
     <div>
       <div>
-        <h3 style={style}><Link to='/'>Home</Link></h3>
-        <h3 style={style}><Link to='/Generator'>Meme Generator</Link></h3>
-        <h3 style={style}><Link to='/Portfolio'>Portfolio</Link></h3>
+        <HeaderMenuItem linkLocation='/' labelText='Home' />
+        <HeaderMenuItem linkLocation='/Generator' labelText='Meme Generator' />
+        <HeaderMenuItem linkLocation='/Portfolio' labelText='Portfolio' />
       </div>
       {children}
     </div>

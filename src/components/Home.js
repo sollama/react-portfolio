@@ -5,7 +5,7 @@ import profile from '../assets/profile.JPG';
 import Portfolio from './Portfolio';
 import Generator from '../projects/generator'
 
-class App extends Component {
+class Home extends Component {
     state = { displayBio: false };
 
     toggleDisplayBio = () => {
@@ -42,4 +42,4 @@ class App extends Component {
       )}
     }
 
-export default App;
+export default Home;
