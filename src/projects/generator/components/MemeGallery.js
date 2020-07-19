@@ -67,4 +67,4 @@ function mapStateToProps(state) {
     return state;
 }
 
-export default connect(mapStateToProps, null)(App);
+export default connect(mapStateToProps, null)(MemeGallery);

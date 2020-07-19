@@ -1,12 +1,12 @@
 import React from 'react';
-import Meme from './components/Meme';
+import MemeGallery from './components/MemeGallery';
 
 import { createStore, applyMiddleware } from 'redux';
 import { Provider } from 'react-redux';
 import rootReducer from './reducers/memeReducer.js';
 import thunk from 'redux-thunk';
 
-import { fetchMemes } from './actions/memeAction.js';
+import { fetchMemes } from './actions/fetch.js';
 
 const store = createStore(rootReducer, applyMiddleware(thunk));
 store.subscribe(() => console.log('store', store.getState()));
@@ -16,7 +16,7 @@ const Generator = () => {
     return (
         <div>
         <Provider store={store}>
-            <Meme />
+            <MemeGallery />
         </Provider>
         </div>
     )

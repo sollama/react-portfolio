@@ -1,5 +1,5 @@
 import  React, { Component } from 'react';
-import { createMeme } from '../actions';
+import { createMeme } from '../actions/fetch';
 import { connect } from 'react-redux';
 
 class MemeItem extends Component {

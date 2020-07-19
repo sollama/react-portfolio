@@ -1,39 +1,21 @@
 import { username, password } from './secrets';
-
-export const RECEIVE_MEMES = 'RECEIVE_MEMES';
-export const NEW_MEME = 'NEW_MEME';
-
-function receiveMemes(json) {
-    const { memes } = json.data
-    
-    return {
-        type: RECEIVE_MEMES,
-        memes
-    }
-}
+import { receiveMemes, newMeme} from './memeActions';
 
 //performs fetch and handles json data
-function fetchMemesJson() {
+const fetchMemesJson = () => {
     return fetch('https://api.imgflip.com/get_memes')
     .then(response => response.json())
 }
 
 //dispatch helps handle asynchronous behavior of api
-export function fetchMemes() {
-    return function(dispatch) {
+const fetchMemes = () => {
+    return (dispatch) => {
         return fetchMemesJson()
         .then(json => dispatch(receiveMemes(json)))
     }
 }
 
-export function newMeme(meme) {
-    return {
-      type: NEW_MEME,
-      meme
-    }
-}
-
-function postMemeJson(params) {
+const postMemeJson = (params) => {
     params['username'] = username;
     params['password'] = password;
 
@@ -52,9 +34,11 @@ function postMemeJson(params) {
   }).then(response => response.json());
 }
 
-export function createMeme(new_meme_object) {
-    return function(dispatch) {
+const createMeme = (new_meme_object) => {
+    return (dispatch) => {
       return postMemeJson(new_meme_object)
         .then(new_meme => dispatch(newMeme(new_meme)))
     }
   }
+
+export {createMeme, fetchMemes}
