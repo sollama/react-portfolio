@@ -5,7 +5,7 @@ import MemeItem from './MemeItem'
 import { Form, FormGroup, FormControl, ControlLabel } from 'react-bootstrap';
 import MyMemes from './MyMemes'
 
-class App extends Component {
+class MemeGallery extends Component {
     
     constructor() {
         super();
@@ -67,4 +67,4 @@ function mapStateToProps(state) {
     return state;
 }
 
-export default connect(mapStateToProps, null)(App);
+export default connect(mapStateToProps, null)(MemeGallery);

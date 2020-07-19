@@ -1,7 +1,8 @@
 import { combineReducers } from 'redux';
-import { RECEIVE_MEMES, NEW_MEME } from '../actions';
+import { RECEIVE_MEMES, NEW_MEME } from '../actions/memeActions';
 
-function memes(state = [], action) {
+
+const memes = (state = [], action) => {
     switch(action.type) {
         case RECEIVE_MEMES:
             return action.memes;

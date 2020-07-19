@@ -28,4 +28,4 @@ class MyMemes extends Component {
     }
   }
   
-  export default connect(mapStateToProps, null)(MyMemes);
+export default connect(mapStateToProps, null)(MyMemes);

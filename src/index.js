@@ -2,13 +2,11 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { Router, Switch, Route } from 'react-router-dom';
 import createBrowserHistory from 'history/createBrowserHistory';
-import App from './components/App';
+import App from './components/Home';
 import Header from './components/Header';
 import Portfolio from './components/Portfolio'
 import Generator from './projects/generator'
 
-
-import './index.css';
 
 
 ReactDOM.render(

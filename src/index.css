@@ -37,6 +37,15 @@ h1, h2, h3, h4, h5 {
   animation-duration: 2s;
 }
 
+.header-menu{
+  display: inline-block;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
 @keyframes fade-out {
   from {opacity: 100}
   to {opacity: 0}
