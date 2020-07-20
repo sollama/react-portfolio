@@ -13,8 +13,9 @@ ReactDOM.render(
             <Switch>
                 <Route exact path='/' render={() => <Header><App /></Header>} />
                 <Route path='/generator' render={() => <Header><Generator /></Header>} />
+                <Route path='*' render={() => <Header><App /></Header>}/>
             </Switch>
-        </Router>
+        </Router> 
     </div>,
 document.getElementById('root'));
 
