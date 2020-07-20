@@ -26,7 +26,8 @@
     "build": "parcel build src/index.html",
     "start": "parcel src/index.html",
     "server": "nodemon server.js",
-    "deploy": "gh-pages -b master -d dist"
+    "deploy": "gh-pages -d dist",
+    "clean" : "gh-pages-clean"
   },
   "devDependencies": {
     "@babel/core": "^7.10.5"
