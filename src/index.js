@@ -11,7 +11,7 @@ ReactDOM.render(
     <div>
         <Router history={createBrowserHistory()}>
             <Switch>
-                <Route exact path={process.env.PUBLIC_URL + '/'} render={() => <Header><App /></Header>} />
+                <Route exact path='/' render={() => <Header><App /></Header>} />
                 <Route path='/generator' render={() => <Header><Generator /></Header>} />
             </Switch>
         </Router>

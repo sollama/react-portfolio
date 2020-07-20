@@ -1,0 +1,61 @@
+@font-face {
+  font-family: 'Segoe UI';
+  src: url(assets/segoe_ui.woff);
+}
+
+@font-face {
+  font-family: 'Segoe UI Bold';
+  src: url(assets/segoe_ui_bold.woff);
+}
+
+body {
+  text-align: center;
+  font-size: 18px;
+  padding: 2.5%;
+  font-family: 'Segoe UI';
+}
+
+h1, h2 {
+  font-family: 'Segoe UI Bold'
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Segoe UI';
+}
+
+.profile {
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+}
+
+.title-fade-out {
+  opacity: 0;
+  animation-name: fade-out;
+  animation-duration: 2s;
+}
+
+.title-fade-in {
+  opacity: 100;
+  animation-name: fade-in;
+  animation-duration: 2s;
+}
+
+.header-menu{
+  display: inline-block;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+@keyframes fade-out {
+  from {opacity: 100}
+  to {opacity: 0}
+}
+
+@keyframes fade-in {
+  from {opacity: 0}
+  to {opacity: 100}
+}
