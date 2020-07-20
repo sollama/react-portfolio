@@ -22,19 +22,20 @@ class MemeGallery extends Component {
             <div className = "generator">
                 <h2>Welcome to the Meme Generator!</h2>
                 <MyMemes/>
-                <h4><i>Write some text...</i></h4>
-                <Form inline>
+                
+                <h4 className = "pad"><i> Write some text and click on a picture to generate a meme!</i></h4>
+                <Form className = "pad" inline>
                     <FormGroup>
-                        <ControlLabel>Top </ControlLabel>
+                        <ControlLabel>Top &nbsp; </ControlLabel>
                         {''}
                         <FormControl 
                             type="text"
                             onChange= {event => this.setState({text0: event.target.value})}
                             ></FormControl>
                     </FormGroup>
-                    {''}
+                    &nbsp; &nbsp;&nbsp;
                     <FormGroup>
-                        <ControlLabel>Bottom </ControlLabel>
+                        <ControlLabel>Bottom &nbsp;</ControlLabel>
                         {''}
                         <FormControl 
                             type="text"

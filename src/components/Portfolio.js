@@ -15,8 +15,8 @@ const Portfolio = props => {
     )
   }
 
-const Portfolios = () => (
-    <div>
+const Portfolios = () => {
+  return <div>
       <h2>Featured Websites</h2>
       <div>
         {
@@ -26,6 +26,6 @@ const Portfolios = () => (
         }
       </div>
     </div>
-  )
+  }
 
 export default Portfolios;

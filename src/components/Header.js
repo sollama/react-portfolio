@@ -13,7 +13,6 @@ const Header = ({ children }) => {
       <div>
         <HeaderMenuItem linkLocation='/' labelText='Home' />
         <HeaderMenuItem linkLocation='/Generator' labelText='Meme Generator' />
-        <HeaderMenuItem linkLocation='/Portfolio' labelText='Portfolio' />
       </div>
       {children}
     </div>

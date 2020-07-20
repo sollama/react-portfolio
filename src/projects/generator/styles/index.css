@@ -8,12 +8,14 @@
     src: url(../../../assets/segoe_ui_bold.woff);
 }
 
+.pad {
+    padding: 10px 0px;
+}
 
 .generator {
-    background-color: black;
-    color: white;
-    padding:5%;
+    color: black;
     text-align: center;
+    padding: 0% 5% 5% 5%;
 }
 
 .meme-item {
@@ -33,7 +35,7 @@
     width:150px;
     height:150px;
     border-radius: 8px;
-    border: 2px solid white;
+    border: 2px solid black;
     position: absolute;
     object-fit: cover;
     filter: brightness(90%);
@@ -46,7 +48,7 @@
     margin: 5px;
     width: 220px;
     border-radius: 4px;
-    border: 2px solid white;
+    border: 2px solid black;
   }
 
 .meme-text {

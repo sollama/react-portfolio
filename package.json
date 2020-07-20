@@ -1,4 +1,5 @@
 {
+  "homepage": "https://sollama.github.io/react-portfolio",
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
@@ -7,6 +8,7 @@
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
     "@testing-library/user-event": "^7.2.1",
+    "express": "^4.17.1",
     "parcel-bundler": "^1.12.4",
     "react": "^16.13.1",
     "react-bootstrap": "^0.32.4",
@@ -20,7 +22,8 @@
   "scripts": {
     "dev": "parcel src/index.html",
     "build": "parcel build src/index.html",
-    "start": "react-scripts start"
+    "start": "parcel src/index.html",
+    "server": "nodemon server.js"
   },
   "devDependencies": {
     "@babel/core": "^7.10.5"
