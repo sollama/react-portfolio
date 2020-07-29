@@ -1,6 +1,14 @@
 <<<<<<< HEAD
 # react-portfolio
 =======
+
+Live at http://solana-liu.herokuapp.com/
+
+Mobile-responsive portfolio site outlining past web development projects, social profiles, and a meme generator.
+
+Built with node.js backend and utilized React-Router to display multiple pages of content, including portfolio of featured websites, social profiles, and a Meme Generator app used to generate custom memes. Constructed Meme Generator with React and Redux for predictable state management and used POST API requests to create custom memes.
+
+=======
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
